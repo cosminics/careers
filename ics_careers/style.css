@@ -1,0 +1,242 @@
+/*
+Theme Name: Ics carrers
+Author: Cosmin
+Author URI: http://ilcos.ro/
+Description: Creative, full screen, Bootstrap.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: icsth
+Domain Path: /languages
+*/
+
+/* =StyleNormalization
+--------------------------------------------------------------------------------------------------*/
+.nodisplay { display:none; }
+.nodisplay_strict { display:none !important; }
+.alignleft { float:left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto;}
+.alignnone {float:none;}
+.alignright { float:right; }
+img.alignleft { display:inline; float:left; margin-right:14px; margin-bottom: 14px; }
+img.alignright { display:inline; float:right; margin-left:14px; margin-bottom: 14px;}
+.textleft { text-align:left;}
+.textright { text-align:right;}
+
+a {
+	color: #007cde;	
+}
+a:hover, a:focus {
+	color: #007cdd;	
+}
+	
+/* End StyleNormalization
+--------------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* =Headings
+--------------------------------------------------------------------------------------------------*/
+h1 { font-size:48px;}
+h2 { font-size:48px;}
+h3 { font-size:18px;}
+h4 { font-size:16px;}
+h5 { font-size:14px;}
+h6 { font-size:12px;}
+/* End Headings
+--------------------------------------------------------------------------------------------------*/
+
+/* =Main Nav
+--------------------------------------------------------------------------------------------------*/
+
+/* End Main Nav
+--------------------------------------------------------------------------------------------------*/
+
+/* =Header
+--------------------------------------------------------------------------------------------------*/
+.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+.navbar-brand {
+	height: 43px;
+	padding: 20px 38px;
+ 	transition: .32s;
+}
+.navbar-brand img {
+	padding: 10px 0;
+}
+.sticky_nav.navbar_fixed{
+	background-color: #3e1181;
+}
+.sticky_nav.navbar_fixed .logo_full, .sticky_nav .logo_top{
+	display: none;
+}
+.sticky_nav.navbar_fixed .logo_top{
+	display: inline-block;
+}
+.sticky_nav.navbar_fixed .navbar-brand {
+	height: 80px;
+	transition: .25s;
+    display: flex;
+    align-items: center;
+}
+
+/* =END Header
+--------------------------------------------------------------------------------------------------*/
+
+/* =Main Content
+--------------------------------------------------------------------------------------------------*/
+.section_slider h1, .section_about h2{
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.section_about {
+	padding: 130px 0px 175px 0px;
+}
+.section_about h2{
+	padding: 0 23px;
+}
+.section_about_row {
+	padding: 40px 0;
+}
+.section_about_row > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.section_about_row h3 {
+	color: #1c003b;
+	margin: 0;
+}
+/* =End Main Content
+--------------------------------------------------------------------------------------------------*/
+
+/* =Slider
+--------------------------------------------------------------------------------------------------*/
+.careers_row {
+	display: flex;
+	align-items: center;
+}
+.careers_row img{
+	margin-left: 23px;
+	transform: translatey(0px);
+	animation: ani_float 6s ease-in-out infinite;
+}
+.careers_row h1{
+	text-align: right;
+	margin-bottom: 35px;
+	padding-right: 7px;
+}
+.section_slider {
+	padding: 150px 0 122px 0;
+	color: #ffffff;
+	background: rgb(82,22,170);
+	background: linear-gradient(-145deg, rgba(82,22,170,1) 0%, rgba(28,0,59,1) 100%);
+}
+.careers_slider {
+	position: relative;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: right;
+	padding-bottom: 30px;
+    margin-bottom: 27px;
+}
+.careers_slider em{
+	font-size: 18px;
+}
+.careers_slider p{
+	padding: 0 5px;
+	margin-bottom: 20px;
+}
+.slick-prev, .slick-next {
+	top: auto;
+	bottom:-12px;
+	width: 24px;
+    height: 24px;
+}
+.careers_slider .slick-next{
+	right: 5px;
+}
+.careers_slider .slick-prev{
+	left: auto;
+	right: 88px;
+}
+
+.careers_slider .slick-next:before, .careers_slider .slick-prev:before {
+    content: "";
+    display: block;
+    height: 18px;
+    width: 18px;
+    transform: rotate(315deg);
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+}
+.careers_slider .slick-next:before {
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+.careers_slider .slick-prev:before {
+    border-left: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+}
+/* =Secondary Content
+--------------------------------------------------------------------------------------------------*/
+
+/* =Footer
+--------------------------------------------------------------------------------------------------*/
+#footer {
+	padding:15px 0; 
+	text-align:center;
+	color: #ffffff;
+	background: rgb(82,22,170);
+	background: linear-gradient(-145deg, rgba(82,22,170,1) 0%, rgba(28,0,59,1) 100%);
+}
+
+/* End Footer
+--------------------------------------------------------------------------------------------------*/
+/* =Forms
+--------------------------------------------------------------------------------------------------*/
+
+/* Removing fieldset borders (remove if you want to keep the defaults defined in Normalization) */
+fieldset { border: 1px solid transparent; margin: 0; padding: 0; }
+
+/* End Forms
+--------------------------------------------------------------------------------------------------*/
+
+/* =Clearing floats
+ --------------------------------------------------------------------------------------------------------*/
+.clear:after
+{
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* ie7 only */
+.clear 
+ {
+	zoom: 1;
+}
+/* End Clearing floats
+ --------------------------------------------------------------------------------------------------------*/
+@keyframes ani_float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

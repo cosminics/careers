@@ -1,0 +1,37 @@
+@media (min-width: 992px) {
+  .navbar-collapse .navbar-nav {
+    float: right;
+  }
+}
+
+@media (max-width:1024px){
+	.careers_row{
+	    flex-direction: column;
+	}
+	.careers_row img{
+		margin: 0 auto
+	}
+}
+
+@media (max-width:767px){
+	.sticky_nav.navbar_fixed .navbar-brand {
+		height: auto;
+		padding: 5px 15px;
+	}
+	.navbar-brand img.logo_top {
+		max-width: 40px;
+	}
+	.careers_row h1, .careers_slider, .section_about h2{
+		text-align: center;
+	}
+	.careers_slider .slick-prev {
+		left: 5px;
+		right: auto;
+	}
+	.section_slider {
+		padding: 150px 0 50px 0;
+	}
+	.section_about {
+	    padding: 70px 0px 70px 0px;
+	}
+}
