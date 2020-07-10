@@ -95,7 +95,7 @@ h6 { font-size:12px;}
 }
 
 .section_about {
-	padding: 130px 0px 175px 0px;
+	padding: 130px 0px 142px 0px;
 }
 .section_about h2{
 	padding: 0 23px;
@@ -109,9 +109,15 @@ h6 { font-size:12px;}
 	justify-content: center;
 	align-items: center;
 }
+.section_about_row > div:nth-child(1) svg{
+	top: 5px !important;
+}
+.section_about_row > div:nth-child(2) svg{
+	top: 23px !important;
+}
 .section_about_row h3 {
 	color: #1c003b;
-	margin: 0;
+	margin:3px auto 0;
 }
 /* =End Main Content
 --------------------------------------------------------------------------------------------------*/
@@ -191,6 +197,7 @@ h6 { font-size:12px;}
 --------------------------------------------------------------------------------------------------*/
 #footer {
 	padding:15px 0; 
+    line-height: 17px;
 	text-align:center;
 	color: #ffffff;
 	background: rgb(82,22,170);
@@ -208,6 +215,47 @@ fieldset { border: 1px solid transparent; margin: 0; padding: 0; }
 /* End Forms
 --------------------------------------------------------------------------------------------------*/
 
+#back-top {
+    bottom: 35px;
+    position: fixed;
+    right: 12px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #1c003b;
+    border:1px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-animation: flash 3000ms infinite;
+    -moz-animation: flash 3000ms infinite;
+    -ms-animation: flash 3000ms infinite;
+    -o-animation: flash 3000ms infinite;
+    animation: flash 3000ms infinite;
+}
+#back-top:after {
+    content: "\f106";
+    font-family: "FontAwesome";
+    font-size: 25px;
+    color: #ffffff;
+}
+#back-top:hover {
+    -webkit-animation: flash 0s infinite;
+    -moz-animation: flash 0s infinite;
+    -ms-animation: flash 0s infinite;
+    -o-animation: flash 0s infinite;
+    animation: flash 0s infinite;
+}
 /* =Clearing floats
  --------------------------------------------------------------------------------------------------------*/
 .clear:after
@@ -240,3 +288,12 @@ fieldset { border: 1px solid transparent; margin: 0; padding: 0; }
 		transform: translatey(0px);
 	}
 }
+
+@keyframes flash{
+	0%,50%,100%{
+		opacity:1
+		}
+	25%,75%{
+		opacity:0
+		}
+	}

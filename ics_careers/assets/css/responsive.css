@@ -4,12 +4,15 @@
   }
 }
 
-@media (max-width:1024px){
+@media (max-width:991px){
 	.careers_row{
 	    flex-direction: column;
 	}
 	.careers_row img{
 		margin: 0 auto
+	}
+	.careers_row h1, .careers_slider, .section_about h2{
+		text-align: center;
 	}
 }
 
@@ -20,9 +23,6 @@
 	}
 	.navbar-brand img.logo_top {
 		max-width: 40px;
-	}
-	.careers_row h1, .careers_slider, .section_about h2{
-		text-align: center;
 	}
 	.careers_slider .slick-prev {
 		left: 5px;

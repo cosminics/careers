@@ -1,4 +1,24 @@
 <?php
+///////////////////////////////////////////
+//--------- OT THEME OPTIONS ---------------//
+/**
+ * Required: set 'ot_theme_mode' filter to true.
+ */
+add_filter( 'ot_show_pages', '__return_false' );
+add_filter( 'ot_show_new_layout', '__return_false' );
+add_filter( 'ot_theme_mode', '__return_true' );
+/**
+ * Required: include OptionTree.
+ */
+require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+
+// ICS Theme Options
+load_template( trailingslashit( get_template_directory() ) . 'inc/theme-options.php' );
+// ICS Meta Boxes
+load_template( trailingslashit( get_template_directory() ) . 'inc/meta-boxes.php' );
+//--------- OT THEME OPTIONS :: END --------//
+///////////////////////////////////////////
+
 if ( ! function_exists( 'ics_setup' ) ) :
 	function ics_setup() {
 		load_theme_textdomain( 'icsth', get_template_directory() . '/languages' );
