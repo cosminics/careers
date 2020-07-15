@@ -42,14 +42,22 @@
     background: transparent;
 }
 .slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
+.slick-next:hover
 {
     color: transparent;
     outline: none;
     background: transparent;
 }
+
+.slick-prev:focus,
+.slick-next:focus
+{
+    opacity: .75;
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,

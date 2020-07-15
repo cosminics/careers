@@ -2,7 +2,6 @@
 /**
  * Initialize the custom Meta Boxes. 
  */
-
 add_action( 'admin_init', 'ics_meta_boxes' );
 
 /**

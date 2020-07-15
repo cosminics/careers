@@ -4,7 +4,6 @@
  *
  * @package OptionTree
  */
-
 add_action( 'init', 'ics_theme_options' );
 /**
  * Build the custom settings & update OptionTree.

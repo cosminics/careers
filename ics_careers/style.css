@@ -152,6 +152,9 @@ h6 { font-size:12px;}
 	padding-bottom: 30px;
     margin-bottom: 27px;
 }
+.careers_slider .slick-slide:focus{
+	outline:0;
+}
 .careers_slider em{
 	font-size: 18px;
 }
@@ -162,33 +165,33 @@ h6 { font-size:12px;}
 .slick-prev, .slick-next {
 	top: auto;
 	bottom:-12px;
-	width: 24px;
+	width: 12px;
     height: 24px;
 }
 .careers_slider .slick-next{
-	right: 5px;
+	right: 15px;
 }
 .careers_slider .slick-prev{
 	left: auto;
-	right: 88px;
+	right: 104px;
 }
 
 .careers_slider .slick-next:before, .careers_slider .slick-prev:before {
     content: "";
     display: block;
-    height: 18px;
-    width: 18px;
-    transform: rotate(315deg);
-    -webkit-transform: rotate(315deg);
-    -ms-transform: rotate(315deg);
+	height: 25px;
+    width: 15px;
+    position: relative;
+    background-image: url(./images/arrows.png);
+    background-repeat: no-repeat;
 }
 .careers_slider .slick-next:before {
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
+    right: 3px;
+    background-position: 100% 0;
 }
 .careers_slider .slick-prev:before {
-    border-left: 1px solid #ffffff;
-    border-top: 1px solid #ffffff;
+    left: 3px;
+    background-position: 0 0;
 }
 /* =Secondary Content
 --------------------------------------------------------------------------------------------------*/
