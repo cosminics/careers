@@ -1,6 +1,10 @@
 # Wordpress landingpage theme
 This is a Wordpress custom landing page theme.
 
+<strong>Contributors</strong>: cosminics
+
+<strong>Tags</strong>: wordpress, bootstrap, jquery, slick slider
+
 This was made for a job, it's only a starter theme.
 
 
